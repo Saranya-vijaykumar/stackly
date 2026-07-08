@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Product API - All Tasks</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🛍️ Product API - Practice Tasks</h1>
+<p class="subtitle">Click any task button below to see that task's output</p>
+
+<div id="task-buttons">
+  <button onclick="showTask1()">Task 1: Count</button>
+  <button onclick="showTask2()">Task 2: Names Only</button>
+  <button onclick="showTask3()">Task 3: Below $100</button>
+  <button onclick="showTask4()">Task 4: Above $100</button>
+  <button onclick="showTask5()">Task 5: Category</button>
+  <button onclick="showTask6()">Task 6: Rating</button>
+  <button onclick="showTask7()">Task 7: Search</button>
+  <button onclick="showTask8()">Task 8: Electronics</button>
+  <button onclick="showTask9()">Task 9: Men's Clothing</button>
+  <button onclick="showTask10()">Task 10: Women's Clothing</button>
+  <button onclick="showTask11()">Task 11: Jewellery</button>
+  <button onclick="showTask12()">Task 12: First 5</button>
+  <button onclick="showTask13()">Task 13: Last 5</button>
+  <button onclick="showTask14()">Task 14: Serial No.</button>
+  <button onclick="showTask15()">Task 15: Long Desc</button>
+  <button onclick="showTask16()">Task 16: Highest Rated</button>
+  <button onclick="showTask17()">Task 17: Cheapest</button>
+  <button onclick="showTask18()">Task 18: Costliest</button>
+  <button onclick="showTask19()">Task 19: Error Page</button>
+  <button onclick="showTask20()">Task 20: Mini Project</button>
+</div>
+
+<div id="count"></div>
+
+<!-- Task 7 search box -->
+<div id="search-box">
+  <input type="text" id="searchInput" placeholder="Search by title... e.g. shirt" oninput="searchProducts()">
+</div>
+
+<!-- Task 20 / Challenge controls -->
+<div id="mini-project-controls">
+  <input type="text" id="miniSearch" placeholder="Search product title..." oninput="applyFilters()">
+  <select id="miniCategory" onchange="applyFilters()">
+    <option value="all">All Categories</option>
+    <option value="electronics">Electronics</option>
+    <option value="jewelery">Jewellery</option>
+    <option value="men's clothing">Men's Clothing</option>
+    <option value="women's clothing">Women's Clothing</option>
+  </select>
+  <input type="number" id="miniMaxPrice" placeholder="Max price ($)" oninput="applyFilters()">
+</div>
+
+<div id="products"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+  color: #222;
+}
+
+h1 {
+  text-align: center;
+  color: #1a2b4c;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+#task-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#task-buttons button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #2d5be3;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+#task-buttons button:hover {
+  background: #1a3fb0;
+}
+
+#count {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #1a2b4c;
+}
+
+#search-box, #mini-project-controls {
+  display: none;
+  text-align: center;
+  margin-bottom: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#search-box input, #mini-project-controls input, #mini-project-controls select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  margin: 4px;
+}
+
+#products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: 140px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 15px;
+  margin: 8px 0;
+  min-height: 40px;
+}
+
+.card h4 {
+  color: #2d5be3;
+  margin: 0 0 4px 0;
+}
+
+.card p {
+  font-size: 13px;
+  margin: 4px 0;
+  color: #444;
+}
+
+.buy-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.buy-btn:hover {
+  background: #0f7a35;
+}
+
+.error-box {
+  text-align: center;
+  background: #fff0f0;
+  border: 1px solid #ffb3b3;
+  color: #b30000;
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  grid-column: 1 / -1;
+}
+
+.no-products {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  grid-column: 1 / -1;
+}
+
